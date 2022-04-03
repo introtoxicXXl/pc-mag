@@ -1,22 +1,27 @@
 .home-container{
-  display: flex;
-  justify-content: space-between;
+  padding: 0 30px;
 }
-.left-side{
-  flex-basis: 40%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.right-side{
-  flex-basis: 60%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.right-side img{
-  width: 100%;
+.home-info img{
+  width: 80%;
 }
 .home-info h1{
    font-size: 80px;
+   color: #3B3B3B;
+   margin-bottom: 50px;
+}
+.home-info p{
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 45px;
+}
+@media only screen and (max-width:480px) {
+  .home-info h1{
+    font-size: 30px;
+  }
+  .home-container{
+    padding: 0;
+  }
+  .home-info p{
+    font-size: 14px;
+  }
 }

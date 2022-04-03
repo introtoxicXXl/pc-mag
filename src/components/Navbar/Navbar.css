@@ -8,10 +8,16 @@ nav a{
   text-decoration: none;
   color: black;
   font-size: 18px;
-  padding: 10px 60px;
+  margin-right: 70px;
   font-weight: 700;
   position: relative;
 }
 nav a:hover{
   color: rgb(192, 80, 52);
+}
+@media only screen and (max-width:480px) {
+  nav a{
+    margin-right: 25px;
+    font-size: 14px;
+  }
 }
