@@ -1,19 +1,18 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faStar } from '@fortawesome/free-solid-svg-icons'
 import React from 'react';
-import { Card } from 'react-bootstrap';
+import './cart.css';
 
 const Cart = (props) => {
   const { name, img, rating, review } = props.review;
   return (
-    <Card>
-      <Card.Img variant="top" src={img} />
-      <Card.Body>
-        <Card.Title>{name}</Card.Title>
-        <Card.Text>
-          {review}
-        </Card.Text>
-      </Card.Body>
-    </Card>
-  );
-};
+    <div className='card'>
+    <img src={img} alt="" />
+    <h3>{name}</h3>
+    <p>{review}</p>
+    <p><small>Rating: {rating} <FontAwesomeIcon className='star-icon' icon={faStar}></FontAwesomeIcon></small></p>
+    </div>
+  )
+}
 
 export default Cart;

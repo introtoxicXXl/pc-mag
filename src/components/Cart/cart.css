@@ -1,0 +1,30 @@
+.rating{
+  text-align: left;
+}
+.star-icon{
+  color: orange;
+}
+.card img{
+  width: 100%;
+}
+.card{
+  position: relative;
+  border: 2px solid lightgray;
+  border-radius: 20px;
+}
+.card small{
+  text-align: left;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  padding: 0 8px;
+  margin: 10px 0;
+}
+.card p{
+ text-align: left;
+ margin: 15px 0;
+ padding: 0 8px;
+}
+.card h3{
+  margin: 15px 0;
+}
