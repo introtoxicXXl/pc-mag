@@ -2,9 +2,14 @@ import React from 'react';
 import useReview from '../../hooks/useReview';
 import picture from '../../laptop-picture.png';
 import Cart from '../Cart/Cart';
-import './Home.css'
+import './Home.css';
+import { useNavigate } from 'react-router-dom';
 
 const Home = () => {
+  const navigate =useNavigate();
+  const handelReview =()=>{
+    navigate('/review');
+  }
   const [reviews, setReviews] = useReview();
   return (
     <div className='home-container'>
@@ -19,6 +24,7 @@ const Home = () => {
           reviews.map(review => <Cart key={review.id} review={review}></Cart>).slice(0,3)
         }
       </div>
+      <button className='review-btn' onClick={handelReview}>See All Review</button>
     </div>
   );
 };

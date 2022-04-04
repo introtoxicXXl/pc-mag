@@ -12,6 +12,7 @@ const Review = () => {
           reviews.map(review => <Cart key={review.id} review={review}></Cart>)
         }
       </div>
+      
     </div>
   )
 };
